@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-function App() {
+import Hero from "./components/Hero";
+import AboutTeam from "./components/AboutTeam";
+import AboutUs from "./components/AboutUs";
+import Portfolio from "./components/Portfolio";
+import ContactForm from "./components/ContactForm";
+
+import Services from "./Pages/Services";
+import FilmProduction from "./Pages/FilmProduction";
+import Branding from "./Pages/Branding";
+import ArtCuration from "./Pages/ArtCuration";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     
+      <Navbar />
+
+     
+      <Routes>
+        
+        <Route
+          path="/"
+          element={
+            <>
+              <div className="pt-20">
+                <Hero />
+              <AboutTeam />
+              <AboutUs />
+              
+              <ContactForm />
+              </div>
+            </>
+          }
+        />
+
+        
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/film-production" element={<FilmProduction />} />
+        <Route path="/services/branding" element={<Branding />} />
+        <Route path="/services/art-curation" element={<ArtCuration />} />
+      </Routes>
+    </>
   );
 }
-
-export default App;
