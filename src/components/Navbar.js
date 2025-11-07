@@ -11,8 +11,6 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-1 text-2xl font-bold">
           <span className="text-orange-600">V</span>Films
         </Link>
-
-        
         <nav className="hidden md:flex gap-6">
           <Link to="/services" className="hover:text-orange-600">
             Services
