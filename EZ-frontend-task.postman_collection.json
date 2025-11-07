@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "01506731-75b1-4315-85be-a4b007733ed8",
+		"name": "EZ-frontend-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45137058",
+		"_collection_link": "https://achchans.postman.co/workspace/EZLabs-Contact-API~89a00533-bfd5-46a0-82d2-8399782f578f/collection/45137058-01506731-75b1-4315-85be-a4b007733ed8?action=share&source=collection_link&creator=45137058"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Achchans Mishra",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "achchansmishra@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7388031166",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Hello postman",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+					"protocol": "https",
+					"host": [
+						"vernanbackend",
+						"ezlab",
+						"in"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

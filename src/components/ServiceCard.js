@@ -1,15 +1,28 @@
-import { Link } from "react-router-dom";
-
-export default function ServiceCard({ title, image, link }) {
+export default function ServiceCard({ title, image, link, tape, small }) {
   return (
-    <Link
-      to={link}
-      className="flex flex-col items-center w-64 bg-white rounded-lg shadow-md hover:shadow-xl transition-all overflow-hidden "
+    <a
+      href={link}
+      className={`relative bg-white shadow-lg rounded-sm overflow-hidden transition-transform hover:scale-105 duration-300 ${
+        small ? "w-52" : "w-72"
+      } border-3 border-white`}
     >
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="p-4 text-center">
-        <h3 className="text-lg font-semibold">{title}</h3>
+      {tape && (
+        <img
+          src="/tape.png"
+          alt="tape"
+          className="absolute top-[-16px] left-1/2 -translate-x-1/2 w-20 opacity-90"
+        />
+      )}
+      <div className="overflow-hidden">
+        <img
+          src={image}
+          alt={title}
+          className={`w-full object-cover ${small ? "h-56" : "h-80"}`}
+        />
       </div>
-    </Link>
+      <div className="text-center py-2 italic text-gray-800 font-serif text-base">
+        {title}
+      </div>
+    </a>
   );
 }
