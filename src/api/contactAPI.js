@@ -7,7 +7,7 @@ export async function sendContactForm(data) {
     body: JSON.stringify(data),
   });
 
-  if (response.ok) {
+  if (!response.ok) {
     throw new Error("Network response was not ok");
   }
 
