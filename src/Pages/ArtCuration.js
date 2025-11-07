@@ -7,6 +7,7 @@ export default function ArtCuration() {
         <br/>
       <br/>
       <br/>
+    <br/>
       <section className="max-w-5xl mx-auto py-10 px-6">
         <Link to="/services" className="text-orange-600 mb-4 inline-block">&larr; Back</Link>
         <h2 className="mt-16 text-xl italic mb-6"
