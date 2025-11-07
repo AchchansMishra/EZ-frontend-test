@@ -7,14 +7,12 @@ export default function ArtCuration() {
         <br/>
       <br/>
       <br/>
-      <br/>
       <section className="max-w-5xl mx-auto py-10 px-6">
         <Link to="/services" className="text-orange-600 mb-4 inline-block">&larr; Back</Link>
         <h2 className="mt-16 text-xl italic mb-6"
         style={{fontFamily: "Halant"}}>
           “A place is where it belongs, to the people.” – Vanita Verma
         </h2>
-
         <div className="flex flex-col md:flex-row gap-8">
           <img
             src="/art_curation.jpg"
