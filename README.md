@@ -25,8 +25,6 @@ npm start
 
 Notes
 
-Node.js v18 or newer recommended
-
 If API URL or environment keys are required, create .env file
 
 Postman collection provided for API verification
