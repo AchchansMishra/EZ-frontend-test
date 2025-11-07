@@ -6,7 +6,6 @@ export default function Portfolio() {
   const videos = [
    
     "https://www.youtube.com/embed/dQw4w9WgXcQ",
-     
     
   ];
 
@@ -22,8 +21,7 @@ export default function Portfolio() {
 
   return (
     <section className="relative w-full min-h-screen bg-[#fdf1ec] flex flex-col justify-center items-center px-6 py-20 overflow-hidden">
-      
-      
+    
       <div className="text-center mb-8">
         <h2 className="text-2xl md:text-3xl font-serif mb-2">
           The Highlight Reel
