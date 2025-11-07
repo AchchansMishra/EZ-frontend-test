@@ -14,7 +14,7 @@ A **Single Page Application (SPA)** built using **React**, **Tailwind CSS**, **R
 ### 1️ Clone the Repository
 git clone https://github.com/AchchansMishra/EZ-frontend-test.git
 ### 2 Navigate into the project
-cd EZ-Intern_test
+cd EZ-frontend-test
 
 ###3 Install dependencies
 npm install
