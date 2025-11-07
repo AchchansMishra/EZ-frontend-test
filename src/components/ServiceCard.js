@@ -1,7 +1,6 @@
 export default function ServiceCard({ title, image, link, tape, small }) {
   return (
-    <a
-      href={link}
+    <a href={link}
       className={`relative bg-white shadow-lg rounded-sm overflow-hidden transition-transform hover:scale-105 duration-300 ${
         small ? "w-52" : "w-72"
       } border-3 border-white`}
